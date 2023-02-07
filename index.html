@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+<form>
+  <label for="boardColor">Board Color (changes the board color immediately)</label>
+  <input id="boardColor" name ="boardColor" type="Color" value="#ffffff"><br><br>
+
+  <label for="width">width (2-20)</label>
+  <input name="width" type="number" min="2" max="20" value = "7">
+  <label for="height">height (2-20)</label>
+  <input name= "height" type="number" min="2" max ="20" value = "6"> <br>
+  <label for="player1Color">player 1's color</label>
+  <input name ="player1Color" type="color" value="#ff0000">
+  <label for="player2Color">player 2's color</label>
+  <input name ="player2Color" type="color" value="#0000ff"><br>
+  <input id="startButton" type="button" value="START GAME">
+</form>
+<div id="game">
+  <table id="board"></table>
+</div>
+<script src="connect4.js"></script>
+
+</body>
+</html>
